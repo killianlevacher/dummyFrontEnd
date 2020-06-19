@@ -1,2 +1,2 @@
 FROM nginx
-COPY HTML5_Full_Version_working /usr/share/nginx/html
+COPY HTML5_Full_Version /usr/share/nginx/html
