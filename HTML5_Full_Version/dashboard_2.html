@@ -472,7 +472,8 @@
                                                         <small>TODO insert data here</small>
                                                         <div id="killiandata2" class="stat-percent"><i class="fa fa-level-up text-navy"></i></div>
                                                         <div class="progress progress-mini">
-                                                            <div id="killiandata3" style="width: 85%;" class="progress-bar"></div>
+                                                            <!-- <div id="killiandata3" style="width: 85%;" class="progress-bar"></div> -->
+                                                            <div id="killiandata3" class="progress-bar"></div>
                                                         </div>
                                                     </li>
                                                     <li>
@@ -1260,11 +1261,12 @@ $(document).ready(function() {
         $.getJSON('dashboard_2_mydata.json',function(data){  
             console.log(data);
             $('#killiandata1').append(data.employees[0].firstName)
+            $('#killiandata3').attr("style", "width: 50%;");
 
         });  
 
 
-
+// <div id="killiandata3" style="width: 85%;" class="progress-bar"></div>
 
 
 
