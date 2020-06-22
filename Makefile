@@ -9,3 +9,6 @@ run:
 
 bash:
     docker run -it  --rm --name dz-assistant -v /Users/killian/GIT/itProject-digitalZenAssistant/dummyFrontEnd/HTML5_Full_Version:/usr/share/nginx/html/ -p 8080:80 dz-assistant /bin/bash
+
+
+ #Current tests are in file dashboard_2.html and index.html

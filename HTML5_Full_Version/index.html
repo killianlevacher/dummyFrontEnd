@@ -1345,6 +1345,52 @@
     <script>
         $(document).ready(function() {
 
+        $.getJSON('index_data.json',function(data){  
+            console.log(data);
+            // $('#killiandata1').append(data.employees[0].firstName)
+            // $('#killiandata3').attr("style", "width: 50%;");
+
+        });  
+
+
+        function test_update_doughnut(data_param) {
+                        // Killian add data here
+            var doughnutData = {
+                labels: ["App","Software","Laptop" ],
+                datasets: [{
+                    data: data_param,
+                    backgroundColor: ["#a3e1d4","#dedede","#9CC3DA"]
+                }]
+            } ;
+
+
+            var doughnutOptions = {
+                responsive: false,
+                legend: {
+                    display: false
+                }
+            };
+
+
+            var ctx4 = document.getElementById("doughnutChart").getContext("2d");
+            new Chart(ctx4, {type: 'doughnut', data: doughnutData, options:doughnutOptions});
+                return data
+            }
+        var outside_var = 567
+        // Works
+        $.getJSON('index_data.json',function(data){  
+            console.log(data);
+
+
+            outside_var = data
+            // // Testing to update variables outside of getJson call using a function
+            test_update_doughnut(outside_var)
+            // // $('#killiandata1').append(data.employees[0].firstName)
+            // $('#killiandata3').attr("style", "width: 50%;");
+
+        });  
+
+
             let toast = $('.toast');
 
             setTimeout(function() {
@@ -1400,25 +1446,26 @@
                     }
             );
 
-            var doughnutData = {
-                labels: ["App","Software","Laptop" ],
-                datasets: [{
-                    data: [300,50,100],
-                    backgroundColor: ["#a3e1d4","#dedede","#9CC3DA"]
-                }]
-            } ;
+            // // Killian add data here
+            // var doughnutData = {
+            //     labels: ["App","Software","Laptop" ],
+            //     datasets: [{
+            //         data: [300,50,100],
+            //         backgroundColor: ["#a3e1d4","#dedede","#9CC3DA"]
+            //     }]
+            // } ;
 
 
-            var doughnutOptions = {
-                responsive: false,
-                legend: {
-                    display: false
-                }
-            };
+            // var doughnutOptions = {
+            //     responsive: false,
+            //     legend: {
+            //         display: false
+            //     }
+            // };
 
 
-            var ctx4 = document.getElementById("doughnutChart").getContext("2d");
-            new Chart(ctx4, {type: 'doughnut', data: doughnutData, options:doughnutOptions});
+            // var ctx4 = document.getElementById("doughnutChart").getContext("2d");
+            // new Chart(ctx4, {type: 'doughnut', data: doughnutData, options:doughnutOptions});
 
             var doughnutData = {
                 labels: ["App","Software","Laptop" ],

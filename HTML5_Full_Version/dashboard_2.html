@@ -1257,13 +1257,24 @@ $(document).ready(function() {
     // var test1 = 55555;
 
 
+        function test_function(data) {
+            $('#killiandata1').append(data)
+                return data
+            }
+        var outside_var = 567
         // Works
         $.getJSON('dashboard_2_mydata.json',function(data){  
             console.log(data);
-            $('#killiandata1').append(data.employees[0].firstName)
+            outside_var = data.employees[0].firstName
+            // Testing to update variables outside of getJson call using a function
+            test_function(outside_var)
+            // $('#killiandata1').append(data.employees[0].firstName)
             $('#killiandata3').attr("style", "width: 50%;");
 
         });  
+
+
+        // $('#killiandata1').append(outside_var)
 
 
 // <div id="killiandata3" style="width: 85%;" class="progress-bar"></div>
