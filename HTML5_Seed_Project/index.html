@@ -20,7 +20,9 @@
 
 <div id="wrapper">
 
-    <nav class="navbar-default navbar-static-side" role="navigation">
+    <div id="navigationBar"></div>
+    <!-- navigationBar.html -->
+    <!-- <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
@@ -46,7 +48,7 @@
             </ul>
 
         </div>
-    </nav>
+    </nav> -->
 
     <div id="page-wrapper" class="gray-bg">
         <div class="row border-bottom">
@@ -105,7 +107,11 @@
 <!-- Custom and plugin javascript -->
 <script src="js/inspinia.js"></script>
 <script src="js/plugins/pace/pace.min.js"></script>
-
+ <script> 
+    $(function(){
+      $("#navigationBar").load("navigationBar.html"); 
+    });
+    </script> 
 
 </body>
 
