@@ -1251,17 +1251,14 @@
 // https://www.dropbox.com/s/7tx3454plhxgcdl/dashboard_2_mydata.json?dl=0
 $(document).ready(function() {
 
-   <!-- TODO insert data here The last digit is the value - data2 is the line graph and data3 is histogram  -->
-   // var data2 = [] 
-    // var data2 = [];
-    // var test1 = 55555;
+ <!-- TODO insert data here The last digit is the value - data2 is the line graph and data3 is histogram  -->
 
 
-        function test_function(data) {
-            $('#killiandata1').append(data)
-                return data
-            }
-        var outside_var = 567
+ function test_function(data) {
+    $('#killiandata1').append(data)
+    return data
+}
+var outside_var = 567
         // Works
         $.getJSON('dashboard_2_mydata.json',function(data){  
             console.log(data);
@@ -1274,7 +1271,7 @@ $(document).ready(function() {
         });  
 
 
-           $.getJSON('dashboard_2_tableData.json',function(data){  
+        $.getJSON('dashboard_2_tableData.json',function(data){  
             console.log(data);
 
             var i;
@@ -1286,325 +1283,178 @@ $(document).ready(function() {
 
 
 
-        
 
-
-
-             // <tbody id="killiandata4_table">
-             //                                                    <tr>
-             //                                                        <td class="text-center">1</td>
-             //                                                        <td> Security doors
-             //                                                        </td>
-             //                                                        <td class="text-center small">16 Jun 2014</td>
-             //                                                        <td class="text-center"><span class="label label-primary">$483.00</span></td>
-
-             //                                                    </tr>
-
-
-        // $('#killiandata1').append(outside_var)
-
-
-// <div id="killiandata3" style="width: 85%;" class="progress-bar"></div>
-
-
-
-
-
-        
-        // $('body').append(data.employees[0].firstName);
-        //     console.log('Killian 2 success'+data.employees[0].firstName);
-        //     // console.log('Killian 3 success'+test1);
-        //     $('#killiandata1').append(data.employees[0].firstName)
-        //     // data2 = [
-        //     //     [gd(2012, 1, 1), 7], [gd(2012, 1, 2), 6], [gd(2012, 1, 3), 4], [gd(2012, 1, 4), 8],
-        //     //     [gd(2012, 1, 5), 9], [gd(2012, 1, 6), 7], [gd(2012, 1, 7), 5], [gd(2012, 1, 8), 4],
-        //     //     [gd(2012, 1, 9), 7], [gd(2012, 1, 10), 8], [gd(2012, 1, 11), 9], [gd(2012, 1, 12), 6],
-        //     //     [gd(2012, 1, 13), 4], [gd(2012, 1, 14), 5], [gd(2012, 1, 15), 11], [gd(2012, 1, 16), 8],
-        //     //     [gd(2012, 1, 17), 8], [gd(2012, 1, 18), 11], [gd(2012, 1, 19), 11], [gd(2012, 1, 20), 6],
-        //     //     [gd(2012, 1, 21), 6], [gd(2012, 1, 22), 8], [gd(2012, 1, 23), 11], [gd(2012, 1, 24), 13],
-        //     //     [gd(2012, 1, 25), 7], [gd(2012, 1, 26), 9], [gd(2012, 1, 27), 9], [gd(2012, 1, 28), 15],
-        //     //     [gd(2012, 1, 29), 5], [gd(2012, 1, 30), 8], [gd(2012, 1, 31), 25]
-        //     // ];
-        //     // data2 = data.employees[0].lastName
-            
-        // // $.each(data.employees,function(i,emp){  
-             
-        // // // $('ul').append('<li>'+emp.firstName+' '+emp.lastName+'</li>');  
-        // // });  
-        // }).error(function(){  
-        // console.log('error');  
-        // });  
-        
-
-   // $(function(){
-   //  $.getJSON('dashboard_2_mydata.json',function(data){
-   //      console.log('Killian success1');
-   //      // $.each(data.employees,function(i,emp){
-   //      //     console.log('Killian success2'+emp.firstName);
-   //      //     $('#killiandata1').append(emp.firstName)
-   //      //     // $('ul').append('<li>'+emp.firstName+' '+emp.lastName+'</li>');
-   //      // });
-   //                  // $.each(data.employees,function(i,emp){
-   //                  //     $('ul').append('<li>'+emp.firstName+' '+emp.lastName+'</li>');
-   //                  // });
-   //              }).error(function(){
-   //                  console.log('error');
-   //              });
-   //          });
-
-
-   $('.chart').easyPieChart({
-    barColor: '#f8ac59',
+        $('.chart').easyPieChart({
+            barColor: '#f8ac59',
 //                scaleColor: false,
 scaleLength: 5,
 lineWidth: 4,
 size: 80
 });
 
-   $('.chart2').easyPieChart({
-    barColor: '#1c84c6',
+        $('.chart2').easyPieChart({
+            barColor: '#1c84c6',
 //                scaleColor: false,
 scaleLength: 5,
 lineWidth: 4,
 size: 80
 });
 
-   <!-- TODO insert data here The last digit is the value - data2 is the line graph and data3 is histogram  -->
-            var data2 = [
-                [gd(2012, 1, 1), 7], [gd(2012, 1, 2), 6], [gd(2012, 1, 3), 4], [gd(2012, 1, 4), 8],
-                [gd(2012, 1, 5), 9], [gd(2012, 1, 6), 7], [gd(2012, 1, 7), 5], [gd(2012, 1, 8), 4],
-                [gd(2012, 1, 9), 7], [gd(2012, 1, 10), 8], [gd(2012, 1, 11), 9], [gd(2012, 1, 12), 6],
-                [gd(2012, 1, 13), 4], [gd(2012, 1, 14), 5], [gd(2012, 1, 15), 11], [gd(2012, 1, 16), 8],
-                [gd(2012, 1, 17), 8], [gd(2012, 1, 18), 11], [gd(2012, 1, 19), 11], [gd(2012, 1, 20), 6],
-                [gd(2012, 1, 21), 6], [gd(2012, 1, 22), 8], [gd(2012, 1, 23), 11], [gd(2012, 1, 24), 13],
-                [gd(2012, 1, 25), 7], [gd(2012, 1, 26), 9], [gd(2012, 1, 27), 9], [gd(2012, 1, 28), 15],
-                [gd(2012, 1, 29), 5], [gd(2012, 1, 30), 8], [gd(2012, 1, 31), 25]
-            ];
+        <!-- TODO insert data here The last digit is the value - data2 is the line graph and data3 is histogram  -->
+        var data2 = [
+        [gd(2012, 1, 1), 7], [gd(2012, 1, 2), 6], [gd(2012, 1, 3), 4], [gd(2012, 1, 4), 8],
+        [gd(2012, 1, 5), 9], [gd(2012, 1, 6), 7], [gd(2012, 1, 7), 5], [gd(2012, 1, 8), 4],
+        [gd(2012, 1, 9), 7], [gd(2012, 1, 10), 8], [gd(2012, 1, 11), 9], [gd(2012, 1, 12), 6],
+        [gd(2012, 1, 13), 4], [gd(2012, 1, 14), 5], [gd(2012, 1, 15), 11], [gd(2012, 1, 16), 8],
+        [gd(2012, 1, 17), 8], [gd(2012, 1, 18), 11], [gd(2012, 1, 19), 11], [gd(2012, 1, 20), 6],
+        [gd(2012, 1, 21), 6], [gd(2012, 1, 22), 8], [gd(2012, 1, 23), 11], [gd(2012, 1, 24), 13],
+        [gd(2012, 1, 25), 7], [gd(2012, 1, 26), 9], [gd(2012, 1, 27), 9], [gd(2012, 1, 28), 15],
+        [gd(2012, 1, 29), 5], [gd(2012, 1, 30), 8], [gd(2012, 1, 31), 25]
+        ];
 
-            var data3 = [
-                [gd(2012, 1, 1), 800], [gd(2012, 1, 2), 500], [gd(2012, 1, 3), 600], [gd(2012, 1, 4), 700],
-                [gd(2012, 1, 5), 500], [gd(2012, 1, 6), 456], [gd(2012, 1, 7), 800], [gd(2012, 1, 8), 589],
-                [gd(2012, 1, 9), 467], [gd(2012, 1, 10), 876], [gd(2012, 1, 11), 689], [gd(2012, 1, 12), 700],
-                [gd(2012, 1, 13), 500], [gd(2012, 1, 14), 600], [gd(2012, 1, 15), 700], [gd(2012, 1, 16), 786],
-                [gd(2012, 1, 17), 345], [gd(2012, 1, 18), 888], [gd(2012, 1, 19), 888], [gd(2012, 1, 20), 888],
-                [gd(2012, 1, 21), 987], [gd(2012, 1, 22), 444], [gd(2012, 1, 23), 999], [gd(2012, 1, 24), 567],
-                [gd(2012, 1, 25), 786], [gd(2012, 1, 26), 666], [gd(2012, 1, 27), 888], [gd(2012, 1, 28), 1100],
-                [gd(2012, 1, 29), 178], [gd(2012, 1, 30), 555], [gd(2012, 1, 31), 993]
-            ];
-
-
-
-            // $.getJSON( "mydata.json", function( data ) {
-            //   var items = [];
-            //   $.each( data, function( key, val ) {
-            //     items.push( "<li id='" + key + "'>" + val + "</li>" );
-            //   });
-
-            //   $( "<ul/>", {
-            //     "class": "my-new-list",
-            //     html: items.join( "" )
-            //   }).appendTo( "body" );
-            // });
-
-//             var jqxhr = $.getJSON( "mydata.json", function() {
-//   console.log( "success" );
-//   alert("Pet Name: " + PETNAME);
-// })
-//   .done(function() {
-//     console.log( "second success" );
-//   })
-//   .fail(function() {
-//     console.log( "error" );
-//   })
-//   .always(function() {
-//     console.log( "complete" );
-//   });
+        var data3 = [
+        [gd(2012, 1, 1), 800], [gd(2012, 1, 2), 500], [gd(2012, 1, 3), 600], [gd(2012, 1, 4), 700],
+        [gd(2012, 1, 5), 500], [gd(2012, 1, 6), 456], [gd(2012, 1, 7), 800], [gd(2012, 1, 8), 589],
+        [gd(2012, 1, 9), 467], [gd(2012, 1, 10), 876], [gd(2012, 1, 11), 689], [gd(2012, 1, 12), 700],
+        [gd(2012, 1, 13), 500], [gd(2012, 1, 14), 600], [gd(2012, 1, 15), 700], [gd(2012, 1, 16), 786],
+        [gd(2012, 1, 17), 345], [gd(2012, 1, 18), 888], [gd(2012, 1, 19), 888], [gd(2012, 1, 20), 888],
+        [gd(2012, 1, 21), 987], [gd(2012, 1, 22), 444], [gd(2012, 1, 23), 999], [gd(2012, 1, 24), 567],
+        [gd(2012, 1, 25), 786], [gd(2012, 1, 26), 666], [gd(2012, 1, 27), 888], [gd(2012, 1, 28), 1100],
+        [gd(2012, 1, 29), 178], [gd(2012, 1, 30), 555], [gd(2012, 1, 31), 993]
+        ];
 
 
-           //  $.getJSON('mydata.json', function(data) {
-           //   $('#killiandata1').append(data)
-
-           // });
-
-            // var people = [];
-
-           // $.getJSON('mydata.json', function(data) {
-           //     $.each(data.person, function(i, f) {
-           //        var tblRow = "<tr>" + "<td>" + f.firstName + "</td>" +
-           //         "<td>" + f.lastName + "</td>" + "<td>" + f.job + "</td>" + "<td>" + f.roll + "</td>" + "</tr>"
-           //         $(tblRow).appendTo("#userdata tbody");
-           //   });
-
-           // });
-
-
-        //     var script = document.createElement('script'); 
-
-        // script.src =  "data_loader.js"; 
-
-        // document.head.appendChild(script) 
-
-        //     function getScript(url, callback) {
-        //         var script = document.createElement('script');
-        //         script.type = 'text/javascript';
-        //         script.src = url;
-        //         script.onreadystatechange = callback;
-        //         script.onload = callback;
-        //         document.getElementsByTagName('head')[0].appendChild(script);
-        //     }
-
-        //     getScript("data_loader.js", function(){
-        //         // alert("Pet Name: " + PETNAME);
-        //         // var test1 = 50
-
-        //         // $('#killiandata1').append(test1)
-        //         $('#killiandata1').append(data_test1)
-        //     });
-
-        //     var waitForPETNAME = function(){
-        //         if (typeof data_test1 === 'undefined') {
-        //             setTimeout(waitForPETNAME, 15);
-        //         } else {
-        //             // execute code that uses PETNAME
-        //             $('#killiandata1').append(data_test1)
-        //         }
-        //             };
-
-        //     waitForPETNAME();
 
 
         var test1 = 50
 
-            // $('#killiandata1').append(test1)
-            // $('#killiandata1').append(data_test1)
-            // $('#killiandata2').html("75%")
 
-            var dataset = [
-            {
-                label: "Number of orders",
-                data: data3,
-                color: "#1ab394",
-                bars: {
-                    show: true,
-                    align: "center",
-                    barWidth: 24 * 60 * 60 * 600,
-                    lineWidth:0
-                }
-
-            }, {
-                label: "Payments",
-                data: data2,
-                yaxis: 2,
-                color: "#1C84C6",
-                lines: {
-                    lineWidth:1,
-                    show: true,
-                    fill: true,
-                    fillColor: {
-                        colors: [{
-                            opacity: 0.2
-                        }, {
-                            opacity: 0.4
-                        }]
-                    }
-                },
-                splines: {
-                    show: false,
-                    tension: 0.6,
-                    lineWidth: 1,
-                    fill: 0.1
-                },
-            }
-            ];
-
-
-            var options = {
-                xaxis: {
-                    mode: "time",
-                    tickSize: [3, "day"],
-                    tickLength: 0,
-                    axisLabel: "Date",
-                    axisLabelUseCanvas: true,
-                    axisLabelFontSizePixels: 12,
-                    axisLabelFontFamily: 'Arial',
-                    axisLabelPadding: 10,
-                    color: "#d5d5d5"
-                },
-                yaxes: [{
-                    position: "left",
-                    max: 1070,
-                    color: "#d5d5d5",
-                    axisLabelUseCanvas: true,
-                    axisLabelFontSizePixels: 12,
-                    axisLabelFontFamily: 'Arial',
-                    axisLabelPadding: 3
-                }, {
-                    position: "right",
-                    clolor: "#d5d5d5",
-                    axisLabelUseCanvas: true,
-                    axisLabelFontSizePixels: 12,
-                    axisLabelFontFamily: ' Arial',
-                    axisLabelPadding: 67
-                }
-                ],
-                legend: {
-                    noColumns: 1,
-                    labelBoxBorderColor: "#000000",
-                    position: "nw"
-                },
-                grid: {
-                    hoverable: false,
-                    borderWidth: 0
-                }
-            };
-
-            function gd(year, month, day) {
-                return new Date(year, month - 1, day).getTime();
+        var dataset = [
+        {
+            label: "Number of orders",
+            data: data3,
+            color: "#1ab394",
+            bars: {
+                show: true,
+                align: "center",
+                barWidth: 24 * 60 * 60 * 600,
+                lineWidth:0
             }
 
-            var previousPoint = null, previousLabel = null;
-
-            $.plot($("#flot-dashboard-chart"), dataset, options);
-
-            var mapData = {
-                "US": 298,
-                "SA": 200,
-                "DE": 220,
-                "FR": 540,
-                "CN": 120,
-                "AU": 760,
-                "BR": 550,
-                "IN": 200,
-                "GB": 120,
-            };
-
-
-
-
-
-
-            $('#world-map').vectorMap({
-                map: 'world_mill_en',
-                backgroundColor: "transparent",
-                regionStyle: {
-                    initial: {
-                        fill: '#e4e4e4',
-                        "fill-opacity": 0.9,
-                        stroke: 'none',
-                        "stroke-width": 0,
-                        "stroke-opacity": 0
-                    }
-                },
-
-                series: {
-                    regions: [{
-                        values: mapData,
-                        scale: ["#1ab394", "#22d6b1"],
-                        normalizeFunction: 'polynomial'
+        }, {
+            label: "Payments",
+            data: data2,
+            yaxis: 2,
+            color: "#1C84C6",
+            lines: {
+                lineWidth:1,
+                show: true,
+                fill: true,
+                fillColor: {
+                    colors: [{
+                        opacity: 0.2
+                    }, {
+                        opacity: 0.4
                     }]
-                },
-            });
+                }
+            },
+            splines: {
+                show: false,
+                tension: 0.6,
+                lineWidth: 1,
+                fill: 0.1
+            },
+        }
+        ];
+
+
+        var options = {
+            xaxis: {
+                mode: "time",
+                tickSize: [3, "day"],
+                tickLength: 0,
+                axisLabel: "Date",
+                axisLabelUseCanvas: true,
+                axisLabelFontSizePixels: 12,
+                axisLabelFontFamily: 'Arial',
+                axisLabelPadding: 10,
+                color: "#d5d5d5"
+            },
+            yaxes: [{
+                position: "left",
+                max: 1070,
+                color: "#d5d5d5",
+                axisLabelUseCanvas: true,
+                axisLabelFontSizePixels: 12,
+                axisLabelFontFamily: 'Arial',
+                axisLabelPadding: 3
+            }, {
+                position: "right",
+                clolor: "#d5d5d5",
+                axisLabelUseCanvas: true,
+                axisLabelFontSizePixels: 12,
+                axisLabelFontFamily: ' Arial',
+                axisLabelPadding: 67
+            }
+            ],
+            legend: {
+                noColumns: 1,
+                labelBoxBorderColor: "#000000",
+                position: "nw"
+            },
+            grid: {
+                hoverable: false,
+                borderWidth: 0
+            }
+        };
+
+        function gd(year, month, day) {
+            return new Date(year, month - 1, day).getTime();
+        }
+
+        var previousPoint = null, previousLabel = null;
+
+        $.plot($("#flot-dashboard-chart"), dataset, options);
+
+        var mapData = {
+            "US": 298,
+            "SA": 200,
+            "DE": 220,
+            "FR": 540,
+            "CN": 120,
+            "AU": 760,
+            "BR": 550,
+            "IN": 200,
+            "GB": 120,
+        };
+
+
+
+
+
+
+        $('#world-map').vectorMap({
+            map: 'world_mill_en',
+            backgroundColor: "transparent",
+            regionStyle: {
+                initial: {
+                    fill: '#e4e4e4',
+                    "fill-opacity": 0.9,
+                    stroke: 'none',
+                    "stroke-width": 0,
+                    "stroke-opacity": 0
+                }
+            },
+
+            series: {
+                regions: [{
+                    values: mapData,
+                    scale: ["#1ab394", "#22d6b1"],
+                    normalizeFunction: 'polynomial'
+                }]
+            },
         });
-    </script>
+    });
+</script>
 </body>
 </html>
