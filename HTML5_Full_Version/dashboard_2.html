@@ -748,7 +748,7 @@
                                                                     <th class="text-center">Amount</th>
                                                                 </tr>
                                                             </thead>
-                                                            <tbody>
+                                                            <tbody id="killiandata4_table">
                                                                 <tr>
                                                                     <td class="text-center">1</td>
                                                                     <td> Security doors
@@ -757,7 +757,7 @@
                                                                     <td class="text-center"><span class="label label-primary">$483.00</span></td>
 
                                                                 </tr>
-                                                                <tr>
+                                                    <!--             <tr>
                                                                     <td class="text-center">2</td>
                                                                     <td> Wardrobes
                                                                     </td>
@@ -790,7 +790,7 @@
                                                                     <td>Monitors</td>
                                                                     <td class="text-center small">26 Jun 2013</td>
                                                                     <td class="text-center"><span class="label label-primary">$100.00</span></td>
-                                                                </tr>
+                                                                </tr> -->
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -1272,6 +1272,32 @@ $(document).ready(function() {
             $('#killiandata3').attr("style", "width: 50%;");
 
         });  
+
+
+           $.getJSON('dashboard_2_tableData.json',function(data){  
+            console.log(data);
+            outside_var = data.table_rows[0].number
+            // Testing to update variables outside of getJson call using a function
+
+            $('#killiandata4_table').append("<tr><td class=\"text-center\">"+1+"</td><td>"+"Something"+"</td><td class=\"text-center small\">"+"16 Jun 2014"+"</td><td class=\"text-center\"><span class=\"label label-primary\">"+"$483.00"+"</span></td></tr>")
+
+        });  
+
+
+
+        
+
+
+
+             // <tbody id="killiandata4_table">
+             //                                                    <tr>
+             //                                                        <td class="text-center">1</td>
+             //                                                        <td> Security doors
+             //                                                        </td>
+             //                                                        <td class="text-center small">16 Jun 2014</td>
+             //                                                        <td class="text-center"><span class="label label-primary">$483.00</span></td>
+
+             //                                                    </tr>
 
 
         // $('#killiandata1').append(outside_var)
