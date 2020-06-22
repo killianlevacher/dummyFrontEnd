@@ -1276,12 +1276,11 @@ $(document).ready(function() {
 
            $.getJSON('dashboard_2_tableData.json',function(data){  
             console.log(data);
-            // outside_var = data.table_rows[0].number
-            // Testing to update variables outside of getJson call using a function
 
-            $('#killiandata4_table').append("<tr><td class=\"text-center\">"+1+"</td><td>"+"Something"+"</td><td class=\"text-center small\">"+"16 Jun 2014"+"</td><td class=\"text-center\"><span class=\"label label-primary\">"+"$483.00"+"</span></td></tr>")
-
-            $('#killiandata4_table').append("<tr><td class=\"text-center\">"+data.table_rows[0].number+"</td><td>"+data.table_rows[0].transaction+"</td><td class=\"text-center small\">"+data.table_rows[0].date+"</td><td class=\"text-center\"><span class=\"label label-primary\">"+data.table_rows[0].amount+"</span></td></tr>")
+            var i;
+            for (i = 0; i < data.table_rows.length; i++) {
+                $('#killiandata4_table').append("<tr><td class=\"text-center\">"+data.table_rows[i].number+"</td><td>"+data.table_rows[i].transaction+"</td><td class=\"text-center small\">"+data.table_rows[i].date+"</td><td class=\"text-center\"><span class=\"label label-primary\">"+data.table_rows[i].amount+"</span></td></tr>")
+            } 
 
         });  
 
